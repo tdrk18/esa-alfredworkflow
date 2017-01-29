@@ -1,0 +1,9 @@
+{
+    "export_file": "esa.alfreadworkflow",
+    "bundle_id": "com.tdrk18.esa",
+    "readme": "README.md",
+    "resources": [
+        "bin/esa-alfredworkflow",
+        "icon/*.png"
+    ]
+}
