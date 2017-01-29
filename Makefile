@@ -1,4 +1,4 @@
-all: build
+all: build alfredworkflow
 
 build:
 	go build -o bin/esa-alfredworkflow

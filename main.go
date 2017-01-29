@@ -9,6 +9,7 @@ package main
 
 import (
 	"os"
+	"os/exec"
 
 	"./search"
 
@@ -18,7 +19,8 @@ import (
 func main() {
 	app := cli.NewApp()
 	app.Name = "esa-alfredworkflow"
-	app.Version = version
+	version, _ := exec.Command("cat", "VERSION").Output()
+	app.Version = string(version)
 	app.Commands = []cli.Command{
 		{
 			Name:   "search",
